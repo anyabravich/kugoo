@@ -10,6 +10,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 
 import Card from 'components/Card';
+import Breadcrumbs from 'components/Breadcrumbs';
 
 type Props = {};
 
@@ -17,8 +18,9 @@ const BasketPage = (props: Props) => {
   return (
     <BasketPageBox>
       <Container>
+        <Breadcrumbs mb={49} />
         <H2 marginBottom={40}>Моя корзина</H2>
-        <Empty />
+        <Empty title={'Ваша корзина пуста'} description={'Добавьте в нее товары из каталога'} />
         <H2 marginBottom={50}>Рекомендуем вам</H2>
         <BasketPageSlider>
           <Swiper slidesPerView={5.4} spaceBetween={30} className="mySwiper">
