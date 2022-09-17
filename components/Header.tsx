@@ -1,10 +1,10 @@
-import React from 'react'
-import styled from 'styled-components'
-import Menu from './Menu/Menu'
-import MenuBottom from './Menu/MenuBottom'
-import MenuTop from './Menu/MenuTop'
+import React from 'react';
+import styled from 'styled-components';
+import Menu from './Menu/Menu';
+import MenuBottom from './Menu/MenuBottom';
+import MenuTop from './Menu/MenuTop';
 
-type Props = {}
+type Props = {};
 
 const Header = (props: Props) => {
   return (
@@ -13,11 +13,9 @@ const Header = (props: Props) => {
       <Menu />
       <MenuBottom />
     </HeaderStyled>
-  )
-}
+  );
+};
 
-const HeaderStyled = styled.header`
-  
-`
+const HeaderStyled = styled.header``;
 
-export default Header
+export default Header;
