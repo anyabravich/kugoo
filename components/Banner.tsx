@@ -1,32 +1,30 @@
-import React from 'react'
-import styled from 'styled-components'
-import { rem } from 'polished'
-import Image from 'next/image'
-import Container from './Container'
+import React from "react";
+import styled from "styled-components";
+import { rem } from "polished";
+import Image from "next/image";
+import Container from "./Container";
 
 type Props = {
-  bg: string,
-  children: React.ReactNode
-}
+  bg: string;
+  children: React.ReactNode;
+};
 
-const Banner = ({bg, children}: Props) => {
+const Banner = ({ bg, children }: Props) => {
   return (
     <BannerStyled>
       <BannerCover>
-        <Image src={bg} alt='' layout='fill' />
+        <Image src={bg} alt="" layout="fill" />
       </BannerCover>
       <BannerContent>
-        <Container>
-          {children}
-        </Container>
+        <Container>{children}</Container>
       </BannerContent>
     </BannerStyled>
-  )
-}
+  );
+};
 const BannerContent = styled.div`
   position: relative;
   z-index: 2;
-`
+`;
 const BannerCover = styled.div`
   min-height: inherit;
   position: absolute;
@@ -34,7 +32,7 @@ const BannerCover = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-`
+`;
 
 const BannerStyled = styled.div`
   display: flex;
@@ -45,6 +43,6 @@ const BannerStyled = styled.div`
   min-height: ${rem(421)};
   margin: 0 auto;
   margin-bottom: ${rem(39)};
-`
+`;
 
-export default Banner
+export default Banner;

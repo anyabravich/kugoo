@@ -1,8 +1,8 @@
-import React from 'react';
-import styled from 'styled-components';
-import { rem } from 'polished';
-import Image from 'next/image';
-import Link from 'next/link';
+import React from "react";
+import styled from "styled-components";
+import { rem } from "polished";
+import Image from "next/image";
+import Link from "next/link";
 
 type Props = {
   img: string;
@@ -14,11 +14,17 @@ type Props = {
 
 const Article = ({ img, title, description, date, views }: Props) => {
   return (
-    <Link href={'/blog-detailed'}>
+    <Link href={"/blog-detailed"}>
       <ArticleBox>
         <ArticleImgBox>
           <ArticleImg>
-            <Image src={img} alt={title} width={350} height={234} layout="responsive" />
+            <Image
+              src={img}
+              alt={title}
+              width={350}
+              height={234}
+              layout="responsive"
+            />
           </ArticleImg>
         </ArticleImgBox>
         <ArticleContent>
