@@ -1,9 +1,9 @@
-import React from 'react';
-import styled from 'styled-components';
-import { rem } from 'polished';
-import H3 from './Titles/H3';
-import ButtonDefault from './Buttons/ButtonDefault';
-import Image from 'next/image';
+import React from "react";
+import styled from "styled-components";
+import { rem } from "polished";
+import H3 from "./Titles/H3";
+import ButtonDefault from "./Buttons/ButtonDefault";
+import Image from "next/image";
 
 type Props = {
   title: string;
@@ -14,7 +14,7 @@ const Empty = ({ title, description }: Props) => {
   return (
     <EmptyBox>
       <EmptyImg>
-        <Image src={'/images/empty.svg'} layout="fill" alt="empty"></Image>
+        <Image src={"/images/empty.svg"} alt="empty"></Image>
       </EmptyImg>
       <H3 marginBottom={5}>{title}</H3>
       <EmptyText>{description}</EmptyText>

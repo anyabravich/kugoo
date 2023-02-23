@@ -13,7 +13,7 @@ const Banner = ({ bg, children }: Props) => {
   return (
     <BannerStyled>
       <BannerCover>
-        <Image src={bg} alt="" layout="fill" />
+        <Image src={bg} alt="" />
       </BannerCover>
       <BannerContent>
         <Container>{children}</Container>

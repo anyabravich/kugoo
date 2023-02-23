@@ -1,7 +1,7 @@
-import React from 'react';
-import styled from 'styled-components';
-import { rem } from 'polished';
-import Link from 'next/link';
+import React from "react";
+import styled from "styled-components";
+import { rem } from "polished";
+import Link from "next/link";
 
 type Props = {
   mb?: number;
@@ -14,17 +14,17 @@ const Breadcrumbs = ({ mb = 0, active = true }: Props) => {
       <BreadcrumbsIcon />
       <BreadcrumbsItems>
         <BreadcrumbsItem>
-          <Link href={'/'}>
+          <Link href={"/"}>
             <BreadcrumbsLink active={false}>Главная</BreadcrumbsLink>
           </Link>
         </BreadcrumbsItem>
         <BreadcrumbsItem>
-          <Link href={'/'}>
+          <Link href={"/"}>
             <BreadcrumbsLink active={false}>Каталог</BreadcrumbsLink>
           </Link>
         </BreadcrumbsItem>
         <BreadcrumbsItem>
-          <Link href={'/'}>
+          <Link href={"/"}>
             <BreadcrumbsLink active={active}>Моя корзина</BreadcrumbsLink>
           </Link>
         </BreadcrumbsItem>
@@ -54,11 +54,11 @@ const BreadcrumbsItems = styled.ul`
 const BreadcrumbsItem = styled.li`
   position: relative;
   &:not(:last-child)::after {
-    content: '/';
+    content: "/";
     font-weight: 400;
     font-size: ${rem(12)};
     line-height: ${rem(17)};
-    color: ${(props) => props.theme.colors.grey['600']};
+    color: ${(props) => props.theme.colors.grey["600"]};
   }
 `;
 
@@ -68,7 +68,8 @@ const BreadcrumbsLink = styled.a<{ active: boolean }>`
   font-weight: 400;
   font-size: ${rem(12)};
   line-height: ${rem(17)};
-  color: ${(props) => (props.active ? props.theme.colors.black : props.theme.colors.grey['600'])};
+  color: ${(props) =>
+    props.active ? props.theme.colors.black : props.theme.colors.grey["600"]};
 `;
 
 export default Breadcrumbs;
