@@ -1,8 +1,8 @@
-import React from 'react';
-import styled from 'styled-components';
-import { rem } from 'polished';
-import Image from 'next/image';
-import ButtonDefault from './Buttons/ButtonDefault';
+import React from "react";
+import styled from "styled-components";
+import { rem } from "polished";
+import Image from "next/image";
+import ButtonDefault from "./Buttons/ButtonDefault";
 
 type Props = {};
 
@@ -10,14 +10,16 @@ const CardStock = (props: Props) => {
   return (
     <CardStockBox>
       <CardStockImg>
-        <Image src={'/images/stock-1.png'} alt={'img'} layout="fill" />
+        <Image src={"/images/stock-1.png"} alt={"img"} />
       </CardStockImg>
       <CardStockContent>
         <CardStockDate>Срок проведения: 15.08 - 01.09</CardStockDate>
-        <CardStockTitle>До 01.09 выгода 2880 RUB при покупкеKugoo Kirin M4 Pro 13</CardStockTitle>
+        <CardStockTitle>
+          До 01.09 выгода 2880 RUB при покупкеKugoo Kirin M4 Pro 13
+        </CardStockTitle>
         <CardStockDescription>
-          Купите любой электросамокат с гидроизоляцией или комплексом с 15.07 по 15.08 и становитесь
-          участником розыгрыша!
+          Купите любой электросамокат с гидроизоляцией или комплексом с 15.07 по
+          15.08 и становитесь участником розыгрыша!
         </CardStockDescription>
         <ButtonDefault>Принять участие в акции</ButtonDefault>
       </CardStockContent>

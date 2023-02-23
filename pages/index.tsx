@@ -1,7 +1,7 @@
-import Container from 'components/Container'
-import type { NextPage } from 'next'
-import styled from 'styled-components'
-import Link from 'next/link'
+import Container from "components/Container";
+import type { NextPage } from "next";
+import styled from "styled-components";
+import Link from "next/link";
 
 const Home: NextPage = () => {
   return (
@@ -9,109 +9,69 @@ const Home: NextPage = () => {
       <Container>
         <ul>
           <li>
-            <Link href="/components">
-              <a>Компоненты</a>
-            </Link>
+            <Link href="/components">Компоненты</Link>
           </li>
           <li>
-            <Link href="/main">
-              <a>Главная</a>
-            </Link>
+            <Link href="/main">Главная</Link>
           </li>
           <li>
-            <Link href="/service">
-              <a>Сервис</a>
-            </Link>
+            <Link href="/service">Сервис</Link>
           </li>
           <li>
-            <Link href="/cooperation">
-              <a>Сотрудничество</a>
-            </Link>
+            <Link href="/cooperation">Сотрудничество</Link>
           </li>
           <li>
-            <Link href="/test-drive">
-              <a>Тест-драйв</a>
-            </Link>
+            <Link href="/test-drive">Тест-драйв</Link>
           </li>
           <li>
-            <Link href="/catalog">
-              <a>Каталог товаров</a>
-            </Link>
+            <Link href="/catalog">Каталог товаров</Link>
           </li>
           <li>
-            <Link href="/catalog-detailed">
-              <a>Каталог товаров. Детальная</a>
-            </Link>
+            <Link href="/catalog-detailed">Каталог товаров. Детальная</Link>
           </li>
           <li>
-            <Link href="/product">
-              <a>Страница товара</a>
-            </Link>
+            <Link href="/product">Страница товара</Link>
           </li>
           <li>
-            <Link href="/about">
-              <a>О магазине</a>
-            </Link>
+            <Link href="/about">О магазине</Link>
           </li>
           <li>
-            <Link href="/shipping-payment">
-              <a>Доставка и оплата</a>
-            </Link>
+            <Link href="/shipping-payment">Доставка и оплата</Link>
           </li>
           <li>
-            <Link href="/stock">
-              <a>Акции</a>
-            </Link>
+            <Link href="/stock">Акции</Link>
           </li>
           <li>
-            <Link href="/blog">
-              <a>Блог</a>
-            </Link>
+            <Link href="/blog">Блог</Link>
           </li>
           <li>
-            <Link href="/blog-detailed">
-              <a>Блог. Детальная</a>
-            </Link>
+            <Link href="/blog-detailed">Блог. Детальная</Link>
           </li>
           <li>
-            <Link href="/contacts">
-              <a>Контакты</a>
-            </Link>
+            <Link href="/contacts">Контакты</Link>
           </li>
           <li>
-            <Link href="/basket">
-              <a>Корзина</a>
-            </Link>
+            <Link href="/basket">Корзина</Link>
           </li>
           <li>
-            <Link href="/checkout">
-              <a>Оформление заказа</a>
-            </Link>
+            <Link href="/checkout">Оформление заказа</Link>
           </li>
           <li>
-            <Link href="/thanks">
-              <a>Страница спасибо</a>
-            </Link>
+            <Link href="/thanks">Страница спасибо</Link>
           </li>
           <li>
-            <Link href="/not-found">
-              <a>404</a>
-            </Link>
+            <Link href="/not-found">404</Link>
           </li>
           <li>
-            <Link href="/comparison">
-              <a>Сравнение</a>
-            </Link>
+            <Link href="/comparison">Сравнение</Link>
           </li>
           <li>
-            <Link href="/favorites">
-              <a>Избранное</a>
-            </Link>
+            <Link href="/favorites">Избранное</Link>
           </li>
         </ul>
       </Container>
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

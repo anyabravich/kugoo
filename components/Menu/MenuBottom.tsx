@@ -1,9 +1,9 @@
-import Container from 'components/Container';
-import React from 'react';
-import styled from 'styled-components';
-import { rem } from 'polished';
-import Link from 'next/link';
-import Label from 'components/Label';
+import Container from "components/Container";
+import React from "react";
+import styled from "styled-components";
+import { rem } from "polished";
+import Link from "next/link";
+import Label from "components/Label";
 
 type Props = {};
 
@@ -13,35 +13,24 @@ const MenuBottom = (props: Props) => {
       <Container>
         <MenuBottomBox>
           <MenuBottomItem>
-            <Link href="/about" passHref>
-              <MenuBottomLink>О магазине</MenuBottomLink>
-            </Link>
+            <MenuBottomLink href={"/"}>О магазине</MenuBottomLink>
           </MenuBottomItem>
           <MenuBottomItem>
-            <Link href="/shipping-payment" passHref>
-              <MenuBottomLink>Доставка и оплата</MenuBottomLink>
-            </Link>
+            <MenuBottomLink href={"/"}>Доставка и оплата</MenuBottomLink>
+
             <Label marginLeft={8}>Доступна рассрочка</Label>
           </MenuBottomItem>
           <MenuBottomItem>
-            <Link href="/test-drive" passHref>
-              <MenuBottomLink>Тест-драйв</MenuBottomLink>
-            </Link>
+            <MenuBottomLink href={"/"}>Тест-драйв</MenuBottomLink>
           </MenuBottomItem>
           <MenuBottomItem>
-            <Link href="/blog" passHref>
-              <MenuBottomLink>Блог</MenuBottomLink>
-            </Link>
+            <MenuBottomLink href={"/"}>Блог</MenuBottomLink>
           </MenuBottomItem>
           <MenuBottomItem>
-            <Link href="/contacts" passHref>
-              <MenuBottomLink>Контакты</MenuBottomLink>
-            </Link>
+            <MenuBottomLink href={"/"}>Контакты</MenuBottomLink>
           </MenuBottomItem>
           <MenuBottomItem>
-            <Link href="/stock" passHref>
-              <MenuBottomLink>Акции</MenuBottomLink>
-            </Link>
+            <MenuBottomLink href={"/"}>Акции</MenuBottomLink>
             <Label marginLeft={8}>%</Label>
           </MenuBottomItem>
         </MenuBottomBox>
@@ -66,7 +55,7 @@ const MenuBottomItem = styled.li`
   margin-right: ${rem(50)};
 `;
 
-const MenuBottomLink = styled.a`
+const MenuBottomLink = styled(Link)`
   font-weight: 500;
   font-size: ${rem(14)};
   line-height: ${rem(20)};

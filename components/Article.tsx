@@ -6,7 +6,7 @@ import Link from "next/link";
 
 type Props = {
   img: string;
-  title?: string;
+  title: string;
   description?: string;
   date?: string;
   views?: number;
@@ -18,13 +18,7 @@ const Article = ({ img, title, description, date, views }: Props) => {
       <ArticleBox>
         <ArticleImgBox>
           <ArticleImg>
-            <Image
-              src={img}
-              alt={title}
-              width={350}
-              height={234}
-              layout="responsive"
-            />
+            <Image src={img} alt={title} width={350} height={234} />
           </ArticleImg>
         </ArticleImgBox>
         <ArticleContent>

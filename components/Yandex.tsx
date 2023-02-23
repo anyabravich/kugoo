@@ -1,51 +1,47 @@
-import React from 'react'
-import styled from 'styled-components'
-import { rem } from 'polished'
-import Image from 'next/image'
+import React from "react";
+import styled from "styled-components";
+import { rem } from "polished";
+import Image from "next/image";
 
-type Props = {}
+type Props = {};
 
 const Yandex = (props: Props) => {
   return (
     <YandexStyled>
       <YandexLogo>
-        <Image src='/images/yandex-logo.svg' alt='' width='19' height='29'  />
+        <Image src="/images/yandex-logo.svg" alt="" width="19" height="29" />
       </YandexLogo>
       <YandexContent>
-        <YandexTitle>
-          Яндекс отзывы
-        </YandexTitle>
+        <YandexTitle>Яндекс отзывы</YandexTitle>
         <YandexStarts>
           <YandexStar>
-            <Image src='/images/star.svg' alt='' layout='fill'  />
+            <Image src="/images/star.svg" alt="" />
           </YandexStar>
-          <YandexStarCount>
-            4,9
-          </YandexStarCount>
+          <YandexStarCount>4,9</YandexStarCount>
         </YandexStarts>
       </YandexContent>
     </YandexStyled>
-  )
-}
+  );
+};
 
 const YandexStarCount = styled.div`
   font-weight: 600;
   font-size: ${rem(25)};
   line-height: ${rem(36)};
   text-transform: uppercase;
-`
+`;
 
 const YandexStar = styled.div`
   width: ${rem(14)};
   height: ${rem(14)};
   position: relative;
   margin-right: ${rem(5)};
-`
+`;
 
 const YandexStarts = styled.div`
   display: flex;
   align-items: center;
-`
+`;
 
 const YandexTitle = styled.div`
   position: relative;
@@ -53,10 +49,10 @@ const YandexTitle = styled.div`
   font-weight: 400;
   font-size: ${rem(12)};
   line-height: ${rem(17)};
-  color: ${props => props.theme.colors.grey['600']};
-`
+  color: ${(props) => props.theme.colors.grey["600"]};
+`;
 
-const YandexContent = styled.div``
+const YandexContent = styled.div``;
 
 const YandexLogo = styled.div`
   position: relative;
@@ -65,33 +61,33 @@ const YandexLogo = styled.div`
   justify-content: center;
   width: ${rem(56)};
   height: ${rem(56)};
-  background: #FC3F1D;
+  background: #fc3f1d;
   border-radius: ${rem(5)};
   margin-right: ${rem(18)};
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: ${rem(13)};
     left: 50%;
     transform: translateX(-50%);
     width: ${rem(48)};
     height: ${rem(48)};
-    background: #FC3F1D;
+    background: #fc3f1d;
     opacity: 0.5;
     filter: blur(${rem(15)});
     border-radius: ${rem(5)};
   }
-`
+`;
 
 const YandexStyled = styled.div`
   padding: ${rem(10)};
   display: inline-flex;
   min-width: ${rem(190)};
   align-items: center;
-  background: #FFFFFF;
+  background: #ffffff;
   border: ${rem(1)} solid rgba(93, 108, 123, 0.1);
   box-sizing: border-box;
   border-radius: ${rem(5)};
-`
+`;
 
-export default Yandex
+export default Yandex;
