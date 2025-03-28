@@ -4,7 +4,7 @@ import { rem } from "polished";
 import H2 from "components/Titles/H2";
 import Card from "components/Card";
 import Label from "components/Label";
-import items from "./api/accordion-db";
+import items from "../mock/accordion";
 import Accordion from "components/Accordion";
 import LinkDefault from "components/LinkDefault";
 import Article from "components/Article";

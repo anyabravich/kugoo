@@ -1,0 +1,13 @@
+@use "@/styles/mixins" as *;
+@use "@/styles/constants" as *;
+
+.container {
+  --container-max-width: #{rem(1110)};
+
+  margin: 0 auto;
+  width: calc(100vw - var(--container-padding) * 2);
+
+  &._is-full-width {
+    width: 100%;
+  }
+}

@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 import { rem } from "polished";
-import Container from "components/Container";
 import Link from "next/link";
 import Select, { StylesConfig } from "react-select";
-import Icons from "components/Icons";
-import Logo from "components/Logo";
+import Container from "../Container";
+import Logo from "../Logo";
+import Icon from "../Icon";
 
 type MyOptionType = {
   label: string;
@@ -87,7 +87,7 @@ const Menu = () => {
             <MenuSearchButton />
           </MenuBoxSearch>
           <MenuComparisonBtn href="/comparison">
-            <Icons
+            <Icon
               name="icon-comparison"
               color={"#282739"}
               size={"20"}
@@ -96,7 +96,7 @@ const Menu = () => {
           </MenuComparisonBtn>
 
           <MenuFavoritesBtn href="/favorites">
-            <Icons
+            <Icon
               name="icon-favorite"
               color={"#282739"}
               size={"20"}
@@ -105,7 +105,7 @@ const Menu = () => {
           </MenuFavoritesBtn>
 
           <MenuBasketBtn href="/basket">
-            <Icons
+            <Icon
               name="icon-basket"
               color={"#6F73EE"}
               size={"20"}

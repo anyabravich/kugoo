@@ -1,13 +1,13 @@
-import Container from "components/Container";
 import React from "react";
 import styled from "styled-components";
 import { rem } from "polished";
-import plus from "images/plus.svg";
+import plus from "@/images/plus.svg";
 import Image from "next/image";
-import Telegram from "images/menutop/telegram.svg";
-import Viber from "images/menutop/viber.svg";
-import WhatsApp from "images/menutop/whatsapp.svg";
+// import Telegram from "images/menutop/telegram.svg";
+// import Viber from "images/menutop/viber.svg";
+// import WhatsApp from "images/menutop/whatsapp.svg";
 import Link from "next/link";
+import Container from "../Container";
 
 const MenuTop = () => {
   return (
@@ -28,13 +28,13 @@ const MenuTop = () => {
             </MenuTopList>
             <MenuTopSocial>
               <MenuTopSocialItem href="#">
-                <Image src={Viber} alt="viber" />
+                {/* <Image src={Viber} alt="viber" /> */}
               </MenuTopSocialItem>
               <MenuTopSocialItem href="#">
-                <Image src={WhatsApp} alt="whatsapp" />
+                {/* <Image src={WhatsApp} alt="whatsapp" /> */}
               </MenuTopSocialItem>
               <MenuTopSocialItem href="#">
-                <Image src={Telegram} alt="telegram" />
+                {/* <Image src={Telegram} alt="telegram" /> */}
               </MenuTopSocialItem>
             </MenuTopSocial>
           </MenuTopLeft>

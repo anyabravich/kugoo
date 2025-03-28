@@ -1,7 +1,7 @@
-import Container from "components/Container";
 import type { NextPage } from "next";
 import styled from "styled-components";
 import Link from "next/link";
+import Container from "@/components/Container";
 
 const Home: NextPage = () => {
   return (

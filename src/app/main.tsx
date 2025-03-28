@@ -7,7 +7,7 @@ import Tabs from "components/Tabs";
 import Card from "components/Card";
 import Compilation from "components/Compilation";
 import dynamic from "next/dynamic";
-import items from "./api/accordion-db";
+import items from "../mock/accordion";
 import CardAdvantagesBox from "components/CardAdvantagesBox";
 const Accordion = dynamic(() => import("components/Accordion"), { ssr: false });
 import LinkDefault from "components/LinkDefault";

@@ -1,29 +1,25 @@
 import React from "react";
 import styled from "styled-components";
 import { rem } from "polished";
-import H3 from "./Titles/H3";
+import H3 from "../Titles/H3";
 import Image from "next/image";
-import { Button } from "./Button";
+import { Button } from "../Button";
+import { IEmpty } from "./types";
 
-type Props = {
-  title: string;
-  description: string;
-};
-
-const Empty = ({ title, description }: Props) => {
+const Empty = ({ title, description }: IEmpty) => {
   return (
-    <EmptyBox>
-      <EmptyImg>
-        <Image src={"/images/empty.svg"} alt="empty"></Image>
-      </EmptyImg>
+    <EmptyContainer>
+      <EmptyImgContainer>
+        <Image src={"/images/empty.svg"} fill alt="empty" />
+      </EmptyImgContainer>
       <H3 marginBottom={5}>{title}</H3>
       <EmptyText>{description}</EmptyText>
       <Button>Перейти в каталог</Button>
-    </EmptyBox>
+    </EmptyContainer>
   );
 };
 
-const EmptyBox = styled.section`
+const EmptyContainer = styled.section`
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -33,7 +29,7 @@ const EmptyBox = styled.section`
   border-radius: ${(props) => rem(props.theme.radius.empty)};
 `;
 
-const EmptyImg = styled.div`
+const EmptyImgContainer = styled.div`
   position: relative;
   width: ${rem(134)};
   height: ${rem(85)};
