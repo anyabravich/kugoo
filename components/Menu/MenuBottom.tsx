@@ -5,9 +5,7 @@ import { rem } from "polished";
 import Link from "next/link";
 import Label from "components/Label";
 
-type Props = {};
-
-const MenuBottom = (props: Props) => {
+const MenuBottom = () => {
   return (
     <MenuBottomStyled>
       <Container>

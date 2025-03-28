@@ -2,8 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import { rem } from "polished";
 import H3 from "./Titles/H3";
-import ButtonDefault from "./Buttons/ButtonDefault";
 import Image from "next/image";
+import { Button } from "./Button";
 
 type Props = {
   title: string;
@@ -18,7 +18,7 @@ const Empty = ({ title, description }: Props) => {
       </EmptyImg>
       <H3 marginBottom={5}>{title}</H3>
       <EmptyText>{description}</EmptyText>
-      <ButtonDefault>Перейти в каталог</ButtonDefault>
+      <Button>Перейти в каталог</Button>
     </EmptyBox>
   );
 };

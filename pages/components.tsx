@@ -1,15 +1,15 @@
-import Container from 'components/Container';
-import styled from 'styled-components';
-import { rem } from 'polished';
-import H2 from 'components/Titles/H2';
-import ButtonDefault from 'components/Buttons/ButtonDefault';
-import Card from 'components/Card';
-import Label from 'components/Label';
-import items from './api/accordion-db';
-import Accordion from 'components/Accordion';
-import LinkDefault from 'components/LinkDefault';
-import Article from 'components/Article';
-import Breadcrumbs from 'components/Breadcrumbs';
+import Container from "components/Container";
+import styled from "styled-components";
+import { rem } from "polished";
+import H2 from "components/Titles/H2";
+import Card from "components/Card";
+import Label from "components/Label";
+import items from "./api/accordion-db";
+import Accordion from "components/Accordion";
+import LinkDefault from "components/LinkDefault";
+import Article from "components/Article";
+import Breadcrumbs from "components/Breadcrumbs";
+import { Button } from "components/Button";
 
 type Props = {};
 
@@ -27,7 +27,7 @@ const ComponentsPages = (props: Props) => {
         </ComponentsPagesBox>
         <ComponentsPagesTitle>Ссылки</ComponentsPagesTitle>
         <ComponentsPagesBox>
-          <LinkDefault text={'LinkDefault'} />
+          <LinkDefault text={"LinkDefault"} />
         </ComponentsPagesBox>
         <ComponentsPagesTitle>Заголовки</ComponentsPagesTitle>
         <ComponentsPagesBox>
@@ -35,7 +35,7 @@ const ComponentsPages = (props: Props) => {
         </ComponentsPagesBox>
         <ComponentsPagesTitle>Кнопки</ComponentsPagesTitle>
         <ComponentsPagesBox>
-          <ButtonDefault>ButtonDefault</ButtonDefault>
+          <Button>ButtonDefault</Button>
         </ComponentsPagesBox>
         <ComponentsPagesTitle>Карточки</ComponentsPagesTitle>
         <ComponentsPagesBox>
@@ -44,10 +44,12 @@ const ComponentsPages = (props: Props) => {
         <ComponentsPagesTitle>Статья</ComponentsPagesTitle>
         <ComponentsPagesBox>
           <Article
-            img={'/images/pages/blog/blog-1.png'}
-            title={'Как правильно заряжать электросамокат'}
-            description={'Один из первых вопросов, который волнует после покупки электросамоката.'}
-            date={'01.09.2021'}
+            img={"/images/pages/blog/blog-1.png"}
+            title={"Как правильно заряжать электросамокат"}
+            description={
+              "Один из первых вопросов, который волнует после покупки электросамоката."
+            }
+            date={"01.09.2021"}
             views={53}
           />
         </ComponentsPagesBox>

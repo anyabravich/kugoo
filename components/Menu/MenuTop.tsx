@@ -9,9 +9,7 @@ import Viber from "images/menutop/viber.svg";
 import WhatsApp from "images/menutop/whatsapp.svg";
 import Link from "next/link";
 
-type Props = {};
-
-const MenuTop = (props: Props) => {
+const MenuTop = () => {
   return (
     <MenuTopStyled>
       <Container>

@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { rem } from "polished";
 import Image from "next/image";
-import ButtonDefault from "./Buttons/ButtonDefault";
+import { Button } from "./Button";
 
 type Props = {};
 
@@ -21,7 +21,7 @@ const CardStock = (props: Props) => {
           Купите любой электросамокат с гидроизоляцией или комплексом с 15.07 по
           15.08 и становитесь участником розыгрыша!
         </CardStockDescription>
-        <ButtonDefault>Принять участие в акции</ButtonDefault>
+        <Button>Принять участие в акции</Button>
       </CardStockContent>
     </CardStockBox>
   );

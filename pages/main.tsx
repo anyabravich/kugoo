@@ -14,9 +14,9 @@ import LinkDefault from "components/LinkDefault";
 import Banner from "components/Banner";
 import BannerTitle from "components/BannerTitle";
 import BannerDescription from "components/BannerDescription";
-import ButtonDefault from "components/Buttons/ButtonDefault";
 import Bonus from "components/Bonus";
 import Yandex from "components/Yandex";
+import { Button } from "components/Button";
 
 type Props = {};
 
@@ -153,9 +153,9 @@ const MainPage = (props: Props) => {
         <BannerDescription>
           с бесплатной доставкой по РФ от 1 дня
         </BannerDescription>
-        <ButtonDefault background="#fff" color="#6F73EE" href="catalog">
+        <Button background="#fff" color="#6F73EE" href="catalog">
           Перейти в католог
-        </ButtonDefault>
+        </Button>
       </Banner>
       <Container>
         <BonusBox>

@@ -1,12 +1,10 @@
-import React from 'react';
-import styled from 'styled-components';
-import Menu from './Menu/Menu';
-import MenuBottom from './Menu/MenuBottom';
-import MenuTop from './Menu/MenuTop';
+import React from "react";
+import styled from "styled-components";
+import Menu from "./Menu/Menu";
+import MenuBottom from "./Menu/MenuBottom";
+import MenuTop from "./Menu/MenuTop";
 
-type Props = {};
-
-const Header = (props: Props) => {
+const Header = () => {
   return (
     <HeaderStyled>
       <MenuTop />

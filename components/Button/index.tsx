@@ -2,35 +2,28 @@ import React from "react";
 import styled from "styled-components";
 import { rem } from "polished";
 import Link from "next/link";
+import { IButton } from "./types";
 
-type Props = {
-  children: string;
-  width?: string;
-  background?: string;
-  color?: string;
-  href?: string;
-};
-
-const ButtonDefault = ({
-  href = "/",
+export const Button = ({
+  href,
   children,
-  width = "auto",
-  background = "#6F73EE",
-  color = "#fff",
-}: Props) => {
+  width,
+  background,
+  color,
+}: IButton) => {
   return (
-    <Link href={href} passHref>
-      <ButtonDefaultStyled width={width} background={background} color={color}>
+    <Link href={href || "#"} passHref>
+      <ButtonStyled width={width} background={background} color={color}>
         {children}
-      </ButtonDefaultStyled>
+      </ButtonStyled>
     </Link>
   );
 };
 
-const ButtonDefaultStyled = styled.button<{
-  width: string;
-  background: string;
-  color: string;
+const ButtonStyled = styled.button<{
+  width?: string;
+  background?: string;
+  color?: string;
 }>`
   display: inline-block;
   width: ${(props) => props.width};
@@ -44,5 +37,3 @@ const ButtonDefaultStyled = styled.button<{
   line-height: ${rem(17)};
   cursor: pointer;
 `;
-
-export default ButtonDefault;

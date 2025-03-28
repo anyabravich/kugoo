@@ -1,18 +1,17 @@
-import React from 'react';
-import styled from 'styled-components';
-import { rem } from 'polished';
-import Image from 'next/image';
-import ItemImg from 'images/card/item-1.png';
-import CardButton from './CardButton';
-import ButtonDefault from './Buttons/ButtonDefault';
-
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import CardLabel from './CardLabel';
-import ButtonComparison from './ButtonComparison';
+import React from "react";
+import styled from "styled-components";
+import { rem } from "polished";
+import Image from "next/image";
+import ItemImg from "images/card/item-1.png";
+import CardButton from "./CardButton";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import CardLabel from "./CardLabel";
+import ButtonComparison from "./ButtonComparison";
+import { Button } from "./Button";
 
 type Props = {
   labelText: string;
@@ -41,25 +40,45 @@ const Card = ({ labelText, labelColor }: Props) => {
         <CardCharacteristics>
           <CardCharacteristicsItem>
             <CardCharacteristicsImg>
-              <Image src={'/images/card/icon-1.svg'} width="18" height="18" alt="" />
+              <Image
+                src={"/images/card/icon-1.svg"}
+                width="18"
+                height="18"
+                alt=""
+              />
             </CardCharacteristicsImg>
             <CardCharacteristicsText>2000&nbsp;mAh</CardCharacteristicsText>
           </CardCharacteristicsItem>
           <CardCharacteristicsItem>
             <CardCharacteristicsImg>
-              <Image src={'/images/card/icon-2.svg'} width="11" height="18" alt="" />
+              <Image
+                src={"/images/card/icon-2.svg"}
+                width="11"
+                height="18"
+                alt=""
+              />
             </CardCharacteristicsImg>
             <CardCharacteristicsText>1,2 л.с.</CardCharacteristicsText>
           </CardCharacteristicsItem>
           <CardCharacteristicsItem>
             <CardCharacteristicsImg>
-              <Image src={'/images/card/icon-3.svg'} width="18" height="18" alt="" />
+              <Image
+                src={"/images/card/icon-3.svg"}
+                width="18"
+                height="18"
+                alt=""
+              />
             </CardCharacteristicsImg>
             <CardCharacteristicsText>60 км/ч</CardCharacteristicsText>
           </CardCharacteristicsItem>
           <CardCharacteristicsItem>
             <CardCharacteristicsImg>
-              <Image src={'/images/card/icon-4.svg'} width="18" height="18" alt="" />
+              <Image
+                src={"/images/card/icon-4.svg"}
+                width="18"
+                height="18"
+                alt=""
+              />
             </CardCharacteristicsImg>
             <CardCharacteristicsText>5 часов</CardCharacteristicsText>
           </CardCharacteristicsItem>
@@ -71,16 +90,31 @@ const Card = ({ labelText, labelColor }: Props) => {
           </CardPriceBox>
           <CardButtonBox>
             <CardButton>
-              <Image src={'/images/card/icon-5.svg'} width="20" height="20" alt="" />
+              <Image
+                src={"/images/card/icon-5.svg"}
+                width="20"
+                height="20"
+                alt=""
+              />
             </CardButton>
             <CardButton>
-              <Image src={'/images/card/icon-6.svg'} width="20" height="20" alt="" />
+              <Image
+                src={"/images/card/icon-6.svg"}
+                width="20"
+                height="20"
+                alt=""
+              />
             </CardButton>
           </CardButtonBox>
         </CardBuyBox>
-        <ButtonDefault width={'100%'} background={'#6F73EE'} color={'#ffffff'} href={''}>
+        <Button
+          width={"100%"}
+          background={"#6F73EE"}
+          color={"#ffffff"}
+          href={""}
+        >
           Купить в 1 клик
-        </ButtonDefault>
+        </Button>
       </CardContent>
     </CardStyled>
   );
@@ -102,7 +136,7 @@ const CardPriceOld = styled.div`
   font-size: ${rem(12)};
   line-height: ${rem(17)};
   text-decoration-line: line-through;
-  color: ${(props) => props.theme.colors.grey['600']};
+  color: ${(props) => props.theme.colors.grey["600"]};
   text-align: left;
 `;
 
@@ -131,7 +165,7 @@ const CardCharacteristicsItem = styled.div`
   display: flex;
   align-items: center;
   gap: ${rem(10)};
-  color: ${(props) => props.theme.colors.grey['600']};
+  color: ${(props) => props.theme.colors.grey["600"]};
 `;
 
 const CardCharacteristics = styled.div`
