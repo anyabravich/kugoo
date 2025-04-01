@@ -1,0 +1,18 @@
+@use "sass:color";
+
+$colors: (
+  "black": #000,
+  "white": #fff,
+);
+
+@function hex-to-rgb($hex) {
+  @return color.channel($hex, "red"), color.channel($hex, "green"),
+    color.channel($hex, "blue");
+}
+
+:root {
+  @each $key, $value in $colors {
+    --color-#{$key}: #{$value};
+    --color-#{$key}--rgb: #{hex-to-rgb($value)};
+  }
+}
