@@ -1,25 +1,21 @@
-"use client";
-
 import { ReactNode } from "react";
-import "@/styles/index.scss";
+import { Jost } from "next/font/google";
+import { Metadata } from "next";
+
 import Header from "@/components/Header";
 
-// function MyApp({ Component, pageProps }: AppProps) {
-//   return (
-//     // <Theme>
-//     //   <App>
-//     //     <Header />
-//     //     <Main>
-//     //       {/* <Component {...pageProps} /> */}
-//     //       <GlobalStyle />
-//     //     </Main>
-//     //     <Subscribe />
-//     //     <Footer />
-//     //   </App>
-//     // </Theme>
+import "@/styles/index.scss";
 
-//   );
-// }
+export const metadata: Metadata = {
+  title: "Kugoo",
+  icons: {
+    icon: "/favicon.svg",
+  },
+};
+
+const jost = Jost({
+  subsets: ["latin"],
+});
 
 export default function RootLayout({
   children,
@@ -27,7 +23,7 @@ export default function RootLayout({
   children: ReactNode;
 }>) {
   return (
-    <html lang="ru">
+    <html lang="ru" className={jost.className}>
       <body>
         <Header />
         {children}
