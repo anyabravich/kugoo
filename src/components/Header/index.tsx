@@ -1,14 +1,13 @@
 import React from "react";
 import MenuTop from "../Menu/components/MenuTop";
-// import MenuTop from "../Menu/MenuTop";
-// import Menu from "../Menu/Menu";
+import Menu from "../Menu/components/Menu";
 // import MenuBottom from "../Menu/MenuBottom";
 
 const Header = () => {
   return (
     <>
       <MenuTop />
-      {/* <Menu /> */}
+      <Menu />
       {/* <MenuBottom /> */}
     </>
   );

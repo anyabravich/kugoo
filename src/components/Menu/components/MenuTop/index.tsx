@@ -39,7 +39,9 @@ const MenuTop = () => {
               </a>
             </li>
             <li className={styles["menu-right-item"]}>
-              <a href="#" />
+              <button className={styles["menu-plus"]} type="button">
+                <Icons.plus />
+              </button>
             </li>
           </ul>
         </div>

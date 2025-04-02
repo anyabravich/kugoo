@@ -2,7 +2,9 @@
 
 $colors: (
   "black": #000,
+  "black-100": #282739,
   "white": #fff,
+  "grey-600": #5d6c7b,
 );
 
 @function hex-to-rgb($hex) {
