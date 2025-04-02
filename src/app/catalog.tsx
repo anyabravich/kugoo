@@ -1,9 +1,7 @@
 import Container from "@/components/Container";
 import React from "react";
 
-type Props = {};
-
-const CatalogPage = (props: Props) => {
+const CatalogPage = () => {
   return (
     <>
       <Container>CatalogPage</Container>

@@ -1,6 +1,6 @@
 import Container from "@/components/Container";
 import React from "react";
-import styled from "styled-components";
+
 import Breadcrumbs from "@/components/Breadcrumbs";
 import CardsStock from "@/components/CardsStock";
 import CardStock from "@/components/CardStock";

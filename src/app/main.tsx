@@ -1,6 +1,5 @@
 import React from "react";
-import styled from "styled-components";
-import { rem } from "polished";
+
 import Container from "@/components/Container";
 import H2 from "@/components/Titles/H2";
 import Tabs from "@/components/Tabs";

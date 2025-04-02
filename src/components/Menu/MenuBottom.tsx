@@ -1,6 +1,5 @@
 import React from "react";
-import styled from "styled-components";
-import { rem } from "polished";
+
 import Link from "next/link";
 import Label from "../Label";
 import Container from "../Container";

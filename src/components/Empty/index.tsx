@@ -1,6 +1,5 @@
 import React from "react";
-import styled from "styled-components";
-import { rem } from "polished";
+
 import H3 from "../Titles/H3";
 import Image from "next/image";
 import { Button } from "../Button";

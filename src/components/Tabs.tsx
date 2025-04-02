@@ -1,8 +1,6 @@
 "use client";
 
 import React, { useState } from "react";
-import styled from "styled-components";
-import { rem } from "polished";
 
 type Props = {
   size?: string;

@@ -1,0 +1,9 @@
+@use "src/styles/mixins" as *;
+
+.banner-description {
+  font-weight: 400;
+  font-size: rem(20);
+  line-height: rem(29);
+  color: var(--color-grey-600);
+  margin-bottom: rem(25);
+}

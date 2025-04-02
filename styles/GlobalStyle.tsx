@@ -1,5 +1,4 @@
 import { createGlobalStyle } from "styled-components";
-import { rem } from "polished";
 
 const GlobalStyle = createGlobalStyle`
   * {

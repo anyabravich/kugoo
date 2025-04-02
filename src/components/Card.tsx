@@ -1,6 +1,5 @@
 import React from "react";
-import styled from "styled-components";
-import { rem } from "polished";
+
 import Image from "next/image";
 import ItemImg from "images/card/item-1.png";
 import CardButton from "./CardButton";
