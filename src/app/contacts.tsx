@@ -1,12 +1,10 @@
-import Container from 'components/Container'
-import React from 'react'
+import Container from "@/components/Container";
+import React from "react";
 
-type Props = {}
+type Props = {};
 
 const ContactsPage = (props: Props) => {
-  return (
-    <Container>ContactsPage</Container>
-  )
-}
+  return <Container>ContactsPage</Container>;
+};
 
-export default ContactsPage
+export default ContactsPage;

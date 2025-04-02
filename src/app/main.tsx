@@ -1,22 +1,24 @@
 import React from "react";
 import styled from "styled-components";
 import { rem } from "polished";
-import Container from "components/Container";
-import H2 from "components/Titles/H2";
-import Tabs from "components/Tabs";
-import Card from "components/Card";
-import Compilation from "components/Compilation";
+import Container from "@/components/Container";
+import H2 from "@/components/Titles/H2";
+import Tabs from "@/components/Tabs";
+import Card from "@/components/Card";
+import Compilation from "@/components/Compilation";
 import dynamic from "next/dynamic";
 import items from "../mock/accordion";
-import CardAdvantagesBox from "components/CardAdvantagesBox";
-const Accordion = dynamic(() => import("components/Accordion"), { ssr: false });
-import LinkDefault from "components/LinkDefault";
-import Banner from "components/Banner";
-import BannerTitle from "components/BannerTitle";
-import BannerDescription from "components/BannerDescription";
-import Bonus from "components/Bonus";
-import Yandex from "components/Yandex";
-import { Button } from "components/Button";
+import CardAdvantagesBox from "@/components/CardAdvantagesBox";
+const Accordion = dynamic(() => import("@/components/Accordion"), {
+  ssr: false,
+});
+import LinkDefault from "@/components/LinkDefault";
+import Banner from "@/components/Banner";
+import BannerTitle from "@/components/BannerTitle";
+import BannerDescription from "@/components/BannerDescription";
+import Bonus from "@/components/Bonus";
+import Yandex from "@/components/Yandex";
+import { Button } from "@/components/Button";
 
 type Props = {};
 

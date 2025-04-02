@@ -4,10 +4,10 @@ import { rem } from "polished";
 import Container from "../Container";
 import FooterTitle from "./FooterTitle";
 import Link from "next/link";
-import Logo from "components/Logo";
+import Logo from "@/components/Logo";
 import Image from "next/image";
-import SocialItem from "components/SocialItem";
-import PayItem from "components/PayItem";
+import SocialItem from "@/components/SocialItem";
+import PayItem from "@/components/PayItem";
 import FooterData from "./FooterData";
 import FooterAddresses from "./FooterAddresses";
 

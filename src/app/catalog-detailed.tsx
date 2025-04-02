@@ -1,12 +1,10 @@
-import Container from 'components/Container'
-import React from 'react'
+import Container from "@/components/Container";
+import React from "react";
 
-type Props = {}
+type Props = {};
 
 const CatalogDetailedPage = (props: Props) => {
-  return (
-    <Container>CatalogDetailedPage</Container>
-  )
-}
+  return <Container>CatalogDetailedPage</Container>;
+};
 
-export default CatalogDetailedPage
+export default CatalogDetailedPage;

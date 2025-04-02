@@ -1,12 +1,10 @@
-import Container from 'components/Container'
-import React from 'react'
+import Container from "@/components/Container";
+import React from "react";
 
-type Props = {}
+type Props = {};
 
 const ShippingPaymentPage = (props: Props) => {
-  return (
-    <Container>ShippingPaymentPage</Container>
-  )
-}
+  return <Container>ShippingPaymentPage</Container>;
+};
 
-export default ShippingPaymentPage
+export default ShippingPaymentPage;

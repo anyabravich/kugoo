@@ -1,15 +1,12 @@
-import Article from "components/Article";
-import Articles from "components/Articles";
-import Container from "components/Container";
+import Article from "@/components/Article";
+import Articles from "@/components/Articles";
+import Container from "@/components/Container";
 import React from "react";
 
-type Props = {};
-
-const BlogPage = (props: Props) => {
+const BlogPage = () => {
   return (
     <Container>
       <Articles>
-        {/* TODO: Брать из json */}
         <Article
           img={"/images/pages/blog/blog-1.png"}
           title={"Как правильно заряжать электросамокат"}

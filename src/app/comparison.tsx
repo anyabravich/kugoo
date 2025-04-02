@@ -1,14 +1,14 @@
-import Container from 'components/Container'
-import React from 'react'
+import Container from "@/components/Container";
+import React from "react";
 
-type Props = {}
+type Props = {};
 
 const ComparisonPages = (props: Props) => {
   return (
     <Container>
       <div>ComparisonPages</div>
     </Container>
-  )
-}
+  );
+};
 
-export default ComparisonPages
+export default ComparisonPages;

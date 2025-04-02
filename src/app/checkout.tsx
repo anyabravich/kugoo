@@ -1,12 +1,10 @@
-import Container from 'components/Container'
-import React from 'react'
+import Container from "@/components/Container";
+import React from "react";
 
-type Props = {}
+type Props = {};
 
 const CheckoutPage = (props: Props) => {
-  return (
-    <Container>CheckoutPage</Container>
-  )
-}
+  return <Container>CheckoutPage</Container>;
+};
 
-export default CheckoutPage
+export default CheckoutPage;

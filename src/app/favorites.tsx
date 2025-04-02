@@ -1,9 +1,9 @@
-import Container from "components/Container";
+import Container from "@/components/Container";
 import React from "react";
 import styled from "styled-components";
 import { rem } from "polished";
-import H2 from "components/Titles/H2";
-import Empty from "components/Empty";
+import H2 from "@/components/Titles/H2";
+import Empty from "@/components/Empty";
 
 type Props = {};
 

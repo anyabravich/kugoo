@@ -1,12 +1,10 @@
-import Container from 'components/Container'
-import React from 'react'
+import Container from "@/components/Container";
+import React from "react";
 
-type Props = {}
+type Props = {};
 
 const BlogDetailedPage = (props: Props) => {
-  return (
-    <Container>BlogDetailedPage</Container>
-  )
-}
+  return <Container>BlogDetailedPage</Container>;
+};
 
-export default BlogDetailedPage
+export default BlogDetailedPage;

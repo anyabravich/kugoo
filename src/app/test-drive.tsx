@@ -1,12 +1,10 @@
-import Container from 'components/Container'
-import React from 'react'
+import Container from "@/components/Container";
+import React from "react";
 
-type Props = {}
+type Props = {};
 
 const TestDrivePage = (props: Props) => {
-  return (
-    <Container>TestDrivePage</Container>
-  )
-}
+  return <Container>TestDrivePage</Container>;
+};
 
-export default TestDrivePage
+export default TestDrivePage;

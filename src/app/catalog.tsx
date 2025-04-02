@@ -1,16 +1,14 @@
-import Container from 'components/Container'
-import React from 'react'
+import Container from "@/components/Container";
+import React from "react";
 
-type Props = {}
+type Props = {};
 
 const CatalogPage = (props: Props) => {
   return (
     <>
-      <Container>
-        CatalogPage
-      </Container>
+      <Container>CatalogPage</Container>
     </>
-  )
-}
+  );
+};
 
-export default CatalogPage
+export default CatalogPage;

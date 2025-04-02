@@ -1,12 +1,10 @@
-import Container from 'components/Container'
-import React from 'react'
+import Container from "@/components/Container";
+import React from "react";
 
-type Props = {}
+type Props = {};
 
 const CooperationPage = (props: Props) => {
-  return (
-    <Container>CooperationPage</Container>
-  )
-}
+  return <Container>CooperationPage</Container>;
+};
 
-export default CooperationPage
+export default CooperationPage;

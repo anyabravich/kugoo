@@ -1,8 +1,8 @@
 import React from "react";
-import Banner from "components/Banner";
-import BannerTitle from "components/BannerTitle";
-import BannerDescription from "components/BannerDescription";
-import { Button } from "components/Button";
+import Banner from "@/components/Banner";
+import BannerTitle from "@/components/BannerTitle";
+import BannerDescription from "@/components/BannerDescription";
+import { Button } from "@/components/Button";
 
 const ServicePage = () => {
   return (
